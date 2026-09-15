@@ -31,7 +31,7 @@ Before running the app, you will need API credentials from three sources. For in
 
 ### Sources
 
-This app uses 3 sources to get data. Here is general info on each one and how it is used in the app.
+This app uses 3 sources to get data. Here a summary of each one and how it is used in the app.
 
 #### Mapbox
 
