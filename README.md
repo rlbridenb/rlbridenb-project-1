@@ -1,6 +1,6 @@
 # PlaneApp
 
-An Angular and Electron desktop app for displaying information about aircraft flying overhead. Designed to run on a dedicated desktop display unit, built using a Raspberry Pi 4 connected to an LCD screen.
+An Angular and Electron desktop app for displaying information about aircraft flying overhead. Designed to run on a dedicated desktop display unit, built using a Raspberry Pi 4 connected to an LCD screen. See `TODO.md` for roadmap of updates.
 
 ![Image of application running on desktop display unit](./angular/src/assets/plane-box.jpeg)
 
