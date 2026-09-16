@@ -16,7 +16,7 @@ Before running the app, you will need API credentials from three sources. For in
 
 ## Setup
 
-1. Create a copy of `.env.example`. Name it `.env` and add your the credentials from the above sources.
+1. Create a copy of `.env.example`. Name it `.env` and add the credentials from the above sources.
 
 2. Run `npm install` in the root directory
 
