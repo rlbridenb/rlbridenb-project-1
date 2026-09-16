@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>Settings</h2>
+
+<mat-dialog-content>
+  <div [formGroup]="form" style="display: flex; gap: 30px;">
+        <div>
+          <h3>Shut Off Time</h3>
+            <div style="display: flex; gap: 10px;">
+              <mat-form-field style="max-width: 70px;">
+                  <mat-label>Hour</mat-label>
+                  <input matInput formControlName="shutOffHour" />
+                </mat-form-field>
+
+                <mat-form-field style="max-width: 70px;">
+                  <mat-label>Minute</mat-label>
+                  <input matInput formControlName="shutOffMin" />
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div>
+          <h3>Max Altitude</h3>
+          <mat-form-field>
+            <mat-label>Max Altitude</mat-label>
+            <input matInput formControlName="maxAltitude" />
+          </mat-form-field>
+        </div>
+    </div>
+  <h3>Location Info</h3>
+  <div>
+    <div><b>Current Address: </b>{{ data.address }}, {{ data.city }}, {{ data.state }} {{ data.zipCode }}</div>
+    <div><b>Longitude: </b>{{ data.longitude }}</div>
+    <div><b>Latitude: </b>{{ data.latitude }}</div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button (click)="onSave()">Save</button>
+</mat-dialog-actions>  

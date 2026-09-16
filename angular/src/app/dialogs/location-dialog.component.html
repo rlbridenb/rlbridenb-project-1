@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Set Location</h2>
+<mat-dialog-content>
+  <div [formGroup]="form">
+
+    <mat-form-field style="width: 100%;">
+      <mat-label>Address</mat-label>
+      <input matInput formControlName="address" />
+    </mat-form-field>
+
+    <div style="display: flex; gap: 20px;">
+      <mat-form-field>
+        <mat-label>City</mat-label>
+        <input matInput formControlName="city" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>State</mat-label>
+        <input matInput formControlName="state" />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field>
+      <mat-label>ZIP Code</mat-label>
+      <input matInput formControlName="zipCode" />
+    </mat-form-field>
+
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button (click)="onSave()">Save</button>
+</mat-dialog-actions>  
