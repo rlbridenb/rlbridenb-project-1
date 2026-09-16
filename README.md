@@ -45,7 +45,7 @@ Finds aircraft within a longitude/latitude boundary.
 
 #### AeroAPI from FlightAware
 
-Takes the callsign of an overhead aircraft from OpenSky and returns more detailed info, such as the origin/destination airports, the type of aircraft, and the flight number. Only 1000 requests can be made to this API per month before it starts to incur costs, so this API is only called for airlines that are registered in the app. This helps cut down on requests since AeroAPI usually doesn't usually have much info on private/military aircraft anyway.
+Takes the callsign of an overhead aircraft from OpenSky and returns more detailed info, such as the origin/destination airports, the type of aircraft, and the flight number. Only 1000 requests can be made to this API per month before it starts to incur costs, so this API is only called for airlines that are registered in the app. This helps cut down on requests since AeroAPI usually doesn't have much info on private/military aircraft anyway.
 
 ### Scheduling
 
@@ -53,7 +53,7 @@ The app is scheduled to stop searching for nearby aircraft at 10pm daily. This t
 
 ### Pricing
 
-AeroAPI is somewhat limiting with 1000 free calls per month. To avoid risking charges, don't leave the app running when it is not actively in use. The free tier limits of other APIs are high enough that there is no chance of exceeding them and incurring costs.
+AeroAPI is somewhat limiting with 1000 free calls per month. To avoid risking charges, don't leave the app running if it is not actively in use. The free tier limits of the other APIs are high enough that there is no risk of exceeding them.
 
 More info can be found in the documentation for each API.
 
