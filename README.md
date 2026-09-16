@@ -1,6 +1,8 @@
 # PlaneApp
 
-An Angular and Electron desktop app for displaying information about aircraft flying overhead.
+An Angular and Electron desktop app for displaying information about aircraft flying overhead. Designed to run on a dedicated desktop display unit, built using a Raspberry Pi 4 connected to an LCD screen.
+
+![Image of application running on desktop display unit](./ui/src/assets/plane-box.jpeg)
 
 ## Prerequisites
 
@@ -8,20 +10,20 @@ Before running the app, you will need API credentials from three sources. For in
 
 1. OpenSky Network (https://opensky-network.org) --> Create an account and save your client ID and client secret.
 
-2. AeroAPI (https://www.flightaware.com/commercial/aeroapi/) --> Create an account and sign up for the Personal tier. You will need to enter billing info, but this project does not make enough calls to exceed the monthly free $5 they provide unless you leave it running often (see notes on scheduling and pricing below). Save your API key.
+2. AeroAPI (https://www.flightaware.com/commercial/aeroapi/) --> Create an account and sign up for the Personal tier. You will need to enter billing info, but this project does not make enough calls to exceed the monthly free $5 they provide unless you leave it running for extended periods of time (see notes on scheduling and pricing below). Save your API key.
 
 3. Mapbox (https://www.mapbox.com) --> This is used for setting your location and getting longitude/latitude coordinates to call OpenSky Network. Save your token.
 
 ## Setup
 
-1. Create a copy of .env.example and add your environment variables
+1. Create a copy of `.env.example`. Name it `.env` and add your the credentials from the above sources.
 
 2. Run `npm install` in the root directory
 
 3. Install Angular packages:
 
    ```
-   cd angular
+   cd ui
    npm install
    ```
 
@@ -31,7 +33,7 @@ Before running the app, you will need API credentials from three sources. For in
 
 ### Sources
 
-This app uses 3 sources to get data. Here a summary of each one and how it is used in the app
+This app uses 3 sources to get data. Below is a summary of each and how it is used in the app.
 
 #### Mapbox
 

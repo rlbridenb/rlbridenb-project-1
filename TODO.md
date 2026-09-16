@@ -2,7 +2,8 @@
 
 ### Currently Working On
 
-- Extracting UI components out of `app.component.ts` (e.g., plane-card, menu) instead of housing everything on
+- Refactoring project style/format/naming conventions to align with newer Angular versions (Angular 20+) instead of Angular 19 and lower
+- Extracting UI components out of main app component (e.g., plane-card, menu)
 
 ### Roadmap
 
